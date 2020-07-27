@@ -1,1 +1,15 @@
-test
+.navbar-main .navbar-nav .nav-link {
+display: none;
+}
+@media (max-width: 1199px) {
+  #navbarMain {
+    position: fixed;
+    display: none;
+    background: #1078db;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    top: 0;
+    width: 300px;
+  }
+}
