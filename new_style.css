@@ -1,15 +1,23 @@
-.navbar-main .navbar-nav .nav-link {
-display: none;
-}
 @media (max-width: 1199px) {
-  #navbarMain {
-    position: fixed;
-    display: none;
-    background: #1078db;
-    left: 0;
-    bottom: 0;
-    z-index: 999;
-    top: 0;
-    width: 300px;
-  }
+	#navbarMain {
+		position: fixed;
+		display: none;
+		background: #1078db;
+		left: 0;
+		bottom: 0;
+		z-index: 999;
+		top: 0;
+		width: 300px;
+		padding: 1rem;
+	}
+	.navbar-main .navbar-nav .active>.nav-link:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: #fff;
+	}
 }
